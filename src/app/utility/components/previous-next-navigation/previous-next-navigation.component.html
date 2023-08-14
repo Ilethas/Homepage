@@ -1,0 +1,14 @@
+<a mat-button
+   class="nav-link"
+   color="slategray"
+   [routerLink]="getRelativePortfolioItemUrl(-1) | async">
+  <mat-icon>arrow_back</mat-icon>
+  Previous work
+</a>
+<a mat-button
+   class="nav-link"
+   color="slategray"
+   [routerLink]="getRelativePortfolioItemUrl(1) | async">
+  <mat-icon iconPositionEnd>arrow_forward</mat-icon>
+  Next work
+</a>

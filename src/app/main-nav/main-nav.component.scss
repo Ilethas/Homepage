@@ -1,0 +1,153 @@
+mat-sidenav-content {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.sidenav-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: var(--global-padding);
+}
+
+.close-sidenav-button {
+  align-self: flex-end;
+}
+
+.nav-toolbar {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+
+  min-height: 56px;
+  padding: var(--global-padding);
+  gap: 5px;
+  background-color: rgb(240, 240, 240);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+}
+
+.title-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: black;
+  text-decoration: none;
+}
+
+.nav-titlebar {
+  position: relative;
+}
+
+.titlebar-video-background {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  overflow: clip;
+}
+
+.titlebar-video-background > video {
+  min-width: 100%;
+  transform: translateY(-35%);
+}
+
+.titlebar-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0 35px;
+  padding: var(--global-padding);
+  min-height: 100px;
+}
+
+.title {
+  font-family: "Inknut Antiqua", serif;
+  font-size: 20px;
+  line-height: 1.25;
+}
+
+.description {
+  text-align: justify;
+  max-width: 400px;
+}
+
+.author {
+  font-family: "Inknut Antiqua", serif;
+  font-size: 20px;
+  line-height: 1.25;
+}
+
+footer {
+  display: flex;
+  margin-top: auto;
+  min-height: 30px;
+  padding: 10px var(--global-padding);
+  align-items: center;
+  font-size: 14px;
+  color: slategray;
+  background-color: rgb(240, 240, 240);
+}
+
+.sidenav-container {
+  height: 100%;
+}
+
+.sidenav {
+  width: min(320px, 100vw);
+}
+
+.sidenav .mat-toolbar {
+  background: inherit;
+}
+
+.mat-toolbar.mat-primary {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.side-menu-tree-invisible {
+  display: none;
+}
+
+.side-menu-tree ul,
+.side-menu-tree li {
+  margin-top: 0;
+  margin-bottom: 0;
+  list-style-type: none;
+}
+
+.side-menu-tree .mat-tree-node {
+  align-items: stretch;
+}
+
+.side-menu-item {
+  flex: 1 1 auto;
+  justify-content: left;
+}
+
+.side-menu-item > * {
+  height: 100%;
+  width: 100%;
+  justify-content: left;
+  text-align: left;
+}
+
+/*
+ * Padding for leaf nodes.
+ * Leaf nodes need to have padding so as to align with other non-leaf nodes
+ * under the same parent.
+ */
+.side-menu-tree div[role=group] > .mat-tree-node > .side-menu-item > * {
+  padding-left: 80px;
+}
+
+.active-router-link {
+  text-decoration: underline;
+}
+
+a {
+  word-break: break-word;
+}

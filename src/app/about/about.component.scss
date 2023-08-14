@@ -1,0 +1,41 @@
+@import "src/app/portfolio/portfolio-common.scss";
+
+:host > :last-child {
+  margin-top: var(--global-padding);
+  margin-bottom: var(--global-padding);
+}
+
+div > ul {
+  margin-top: 0;
+}
+
+.article {
+  margin: 0.25rem 0 0.25rem 40px;
+  font-size: 14px;
+}
+
+.skip-indent {
+  margin-top: 0;
+}
+
+.container.prioritize-right {
+  grid-template-columns: 1fr minmax(50%, 1fr);
+}
+
+.about-decoration {
+  justify-self: end;
+}
+
+@media (max-width: 800px) {
+  .container.prioritize-right {
+    grid-template-columns: 1fr;
+  }
+
+  .about-decoration {
+    justify-self: center;
+  }
+
+  .about-info {
+    justify-items: left;
+  }
+}
