@@ -1,0 +1,54 @@
+<app-previous-next-navigation></app-previous-next-navigation>
+<iframe width="850" height="478.13" src="https://www.youtube.com/embed/2qbNsEw56vg?si=J1fVghBGjfCLsHqN"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+</iframe>
+<div class="container align-start">
+  <div>
+    <h2>Overview:</h2>
+    <p>
+      This project aims to reproduce an inventory system similar to one you'd see in RPG games such as <i>Baldur's Gate
+      3</i>, <i>Divinity Original Sin 2</i> or <i>Pillars of Eternity 2</i>. Characters have their own inventory, where
+      each item takes up one cell in the grid. The player can decide in which cell what item should be and perform
+      common actions, such as splitting, combining or swapping items.
+    </p>
+    <h2>Features:</h2>
+    <p>
+      Items can have various features, such as being equippable. For example, if a player character equips a Plate Armor
+      item, the game would update the character's model in game world and UI to reflect that change.
+    </p>
+    <p>
+      Some items can also be containers, and as such have their own inventory. This mean you could create a bag item
+      that
+      the player could open and put some other items inside.
+    </p>
+    <p>
+      Items in the project are created in such a way to make it easy to add new functionality. You could create an item
+      feature that, for example, modifies the character's strength for as long as they have the item in their inventory,
+      or
+      equipped.
+    </p>
+    <h2>Multiplayer:</h2>
+    <p>
+      Item instances held by actors in-game are fully replicated. Any changes made to the instance will be propagated
+      from the server to all connected clients. Items, which are referenced by item instances, are also replicated,
+      which allows them to be modified and created on runtime.
+    </p>
+    <p>
+      You can find the code on <a href="https://github.com/Ilethas/RPG-Inventory-System">https://github.com/Ilethas/RPG-Inventory-System</a>.
+      The repository contains only the source code, as the project contains paid assets such as models and animations.
+    </p>
+  </div>
+  <div>
+    <div class="caption-image" style="max-width: 600px;">
+      <img src="./assets/Data Asset.png" alt="Data asset example"/>
+      <p class="caption">
+        Items can be easily designed in-editor using <i>Data Assets</i>. Characters' inventories keep pointers to <i>Item
+        Instance</i> actors that reference <i>Item</i> objects defined as <i>Data Assets</i>. Both support network
+        replication.
+      </p>
+    </div>
+  </div>
+</div>
+<app-previous-next-navigation></app-previous-next-navigation>

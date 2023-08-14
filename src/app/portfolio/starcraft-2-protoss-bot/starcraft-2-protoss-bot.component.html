@@ -1,0 +1,55 @@
+<app-previous-next-navigation></app-previous-next-navigation>
+<iframe width="850" height="478.13" src="https://www.youtube.com/embed/Nj4hzTu1ONM?si=WH_x4Si_pmn71OXn"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+</iframe>
+<div class="container align-start">
+  <div>
+    <p>
+      This project contains a Python implementation of a bot that plays the StarCraft 2 game, made by Blizzard
+      Entertainment, as the Protoss race. The bot is split into subsystems that work in tandem to accomplish victory.
+      The top level AI is the bot which manages its units using Armies.
+    </p>
+    <p>
+      The Army AI in its current form looks for enemies on the map and, if it is deemed strong enough, engages the
+      enemy. If it sees enemies and determines that they are weaker, it attacks the enemies with the entire group.
+      Otherwise, it retreats back to base. After retreating, the army waits a while before going into battle again.
+    </p>
+    <p>
+      The unit's AI moves toward the command indicated by the army (Move, MoveAttack, or DefendLocation). Depending on
+      the command held, the unit switches from the GroupMovement state to the Fight state, where it is in combat mode.
+      For example, for the Move command, the unit ignores nearby enemies, but if the command is MoveAttack and the unit
+      in GroupMovement state sees an enemy, it enters fight mode. On the other hand, for the command DefendLocation, the
+      unit ignores nearby enemies unless it is at a sufficient distance from the place it should protect.
+    </p>
+    <p>
+      In the Fight state, the unit switches between the AttackBestTarget and AvoidInjury states. When a unit has plenty
+      of life points and a shield, it selects the best target to attack and fights. Otherwise, when the unit receives
+      damage, it temporarily retreats to allow enemy units to focus on its remaining companions.
+    </p>
+    <p>
+      Army AI is implemented with a Behavior Tree and a single unit's AI is made with both Behavior Tree and
+      Hierarchical State Machine – it is possible to switch between both. Unit's AI HFSM and Behavior Tree can be
+      illustrated as below:
+    </p>
+    <div class="container align-end">
+      <div class="caption-image" style="max-width: 600px;">
+        <img src="./assets/Unit HFSM.png" alt="Unit HFSM"/>
+        <p class="caption" style="text-align: center;">Unit HFSM</p>
+      </div>
+      <div class="caption-image" style="max-width: 600px;">
+        <img src="./assets/Unit Behavior Tree.png" alt="Unit Behavior Tree"/>
+        <p class="caption" style="text-align: center;">Unit Behavior Tree</p>
+      </div>
+    </div>
+  </div>
+  <div class="caption-image" style="max-width: 1000px;">
+    <img src="./assets/AI Architecture.png" alt="AI Architecture"/>
+    <p class="caption" style="text-align: center;">AI Architecture</p>
+  </div>
+</div>
+<p>
+  The code for the project is available on <a href="https://github.com/Ilethas/SC2-ProtossBot">https://github.com/Ilethas/SC2-ProtossBot</a>
+</p>
+<app-previous-next-navigation></app-previous-next-navigation>

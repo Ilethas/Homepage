@@ -1,0 +1,11 @@
+<a class="card"
+   [routerLink]="item.url"
+   *ngFor="let item of portfolioData.portfolioItems">
+  <header>
+    <img [src]="item.thumbnailSrc" alt="Portfolio element thumbnail"/>
+  </header>
+  <section>
+    <h2>{{item.label}}</h2>
+    {{item.description}}
+  </section>
+</a>

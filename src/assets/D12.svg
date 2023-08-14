@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg data-bbox="0.882 0.803 64.34 64.644" height="68" width="66.4" xmlns="http://www.w3.org/2000/svg" data-type="ugc">
+    <g>
+        <path d="m26.928 8.003 21.084 10.699-4.417 20.586-19.656 4.519-11.945-17.449z" stroke-width="1.333" stroke="#56330f" fill-rule="evenodd" fill="#56330f"/>
+        <path d="m49.802 18.702-3.366 20.586 11.016 11.098 7.69-13.504-4.628-19.558z" stroke-width="1.333" stroke="#56330f" fill-rule="evenodd" fill="#56330f"/>
+        <path d="m49.555 16.783 9.932-1.115L48.012 4.792 29.114.803l-.96 5.12z" stroke-width="1.333" stroke="#56330f" fill-rule="evenodd" fill="#56330f"/>
+        <path d="m25.924 6.256 1.003-4.765-16.333 11.132-9.215 13.733 8.579-1.104z" stroke-width="1.333" stroke="#56330f" fill-rule="evenodd" fill="#56330f"/>
+        <path d="m10.136 27.624-9.254 1.19 4.17 20.024 11.383 10.4 5.645-14.379z" stroke-width="1.333" stroke="#56330f" fill-rule="evenodd" fill="#56330f"/>
+        <path d="m24.484 45.524-6.322 15.279 20.75 4.644L56.08 52.35 45.182 40.912z" stroke-width="1.333" stroke="#56330f" fill-rule="evenodd" fill="#56330f"/>
+        <text font-weight="400" font-size="21" font-family="Arial" fill="#ffffff" transform="rotate(-11.53 189.28 -98.231)">I2</text>
+        <text font-weight="400" font-size="14" font-family="Arial" fill="#ffffff" transform="matrix(-1.50223 .586 -.36341 -.93163 39.545 47.738)">8</text>
+        <text font-weight="400" font-size="14" font-family="Arial" fill="#ffffff" transform="matrix(-.36034 1.57081 -.97468 -.22359 52.856 22.544)">I0</text>
+        <text font-weight="400" font-size="9" font-family="Arial" fill="#ffffff" transform="matrix(-.9751 -2.04252 .90243 -.43083 14.884 46.195)">7</text>
+        <text font-weight="400" font-size="6" font-family="Arial" fill="#ffffff" transform="matrix(2.17673 -2.24621 .71813 .69591 11.458 19.714)">9.</text>
+        <text font-weight="400" font-size="8" font-family="Arial" fill="#ffffff" transform="matrix(1.60027 1.85852 -.7578 .6525 36.139 7.36)">I</text>
+        <text font-weight="400" font-size="8" font-family="Arial" fill="#ffffff" transform="matrix(1.60027 1.85852 -.7578 .6525 41.207 10.121)">I</text>
+    </g>
+</svg>
